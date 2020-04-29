@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="singleton.SingletonStaticNestedClassTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2020-04-29T07:16:30" hostname="MBP.local" time="5.11">
+  <properties/>
+  <testcase name="testLazySingleton()" classname="singleton.SingletonStaticNestedClassTest" time="4.697"/>
+  <testcase name="testEagerSingleton()" classname="singleton.SingletonStaticNestedClassTest" time="0.086"/>
+  <testcase name="testEnumSingleton()" classname="singleton.SingletonStaticNestedClassTest" time="0.087"/>
+  <testcase name="testDoubleCheckedLockingSingleton()" classname="singleton.SingletonStaticNestedClassTest" time="0.107"/>
+  <testcase name="testStaticNestedClassSingleton()" classname="singleton.SingletonStaticNestedClassTest" time="0.131"/>
+  <system-out><![CDATA[懒汉
+总耗时：4677
+饿汉
+总耗时：84
+枚举
+总耗时：85
+双重检测锁
+总耗时：104
+静态内部类
+总耗时：129
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
