@@ -7,9 +7,16 @@ version '1.0-SNAPSHOT'
 
 sourceCompatibility = 1.8
 
+allprojects {
+    tasks.withType(JavaCompile) {
+        options.encoding = "UTF-8"
+    }
+}
+
 repositories {
     mavenCentral()
 }
+
 
 dependencies {
     compile group: 'com.google.guava', name: 'guava', version: '29.0-jre'
@@ -17,6 +24,6 @@ dependencies {
     testCompile group: 'org.junit.jupiter', name: 'junit-jupiter-engine', version: '5.6.2'
 }
 
-test{
+test {
     useJUnitPlatform()
 }

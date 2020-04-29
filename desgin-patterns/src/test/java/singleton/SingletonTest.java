@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 import java.util.concurrent.CountDownLatch;
 import java.util.function.Supplier;
 
-class SingletonStaticNestedClassTest {
+class SingletonTest {
 
   @Test
   void testEagerSingleton() throws InterruptedException {
